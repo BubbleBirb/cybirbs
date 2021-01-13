@@ -52,16 +52,16 @@ The log you'll be inputting info into.
 
 ### Original Log
 
-> This is the log all of new entries with be added to.
+This is the log all of new entries with be added to.
 
 ### Transaction Log
 
-> All of the transactions will sort into this log. This serves two purposes - to make it easier for the final list to sort through information, and so you have a log to look back on in case any discrepancies arise.
+All of the transactions will sort into this log. This serves two purposes - to make it easier for the final list to sort through information, and so you have a log to look back on in case any discrepancies arise.
 
 ### Masterlist
 
-> This is the final conglomerate of the logs, and the sheet you'll be pulling information from.
-> This is also the sheet you mark notes on! If you have anything to add on the design, add in the Notes column.
+This is the final conglomerate of the logs, and the sheet you'll be pulling information from.
+This is also the sheet you mark notes on! If you have anything to add on the design, add in the Notes column.
 
 ## How to add an entry
 

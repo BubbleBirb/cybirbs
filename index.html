@@ -4,20 +4,29 @@
     
     <!-- Meta Data -->
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href=""/>
-    <title>Your Website Title</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Website's icon in the browser -->
+    <link rel="shortcut icon" type="image/png" href=""/>
+
+    <!-- Title of your site -->
+    <title>Charadex</title>
+
+    <!-- Description of your site -->
+    <meta name="description" content="An automated masterlist for your species!">
+
+
+    <!-- Styles ------------------------------------------ -->
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
-    <!-- Optional Styles ================================== -->
+    <!-- Optional Styles ---------------------------------- -->
     <!-- You can safely remove these if BS styles are good enough for you! -->
     
     <!-- Bootstrap CSS -->
@@ -30,23 +39,22 @@
   <body>
     
     <div class="sticky-top">
+
+      <!-- Navbar
+           (This is safe to remove if you're not a fan!) 
+      ------------------------------------------------------- -->
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="#">Masterlist Stuff</a>
+          <a class="navbar-brand" href="#">Charadex</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Credits</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Dropdown Link
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -59,36 +67,56 @@
           </div>
         </div>
       </nav>
-    
+
+      <!-- Pagination Navbar
+           (Do not remove this tho)
+      ------------------------------------------------------- -->
       <div class="page-nav bg-white py-2 border-bottom">
         <div class="container d-flex justify-content-between">
-          <a onclick="prevPage()" id="btn_prev" class="d-flex align-items-center text-decoration-none" style="cursor:pointer"><i class="bi bi-chevron-left me-2"></i> Previous</a>
-          <a onclick="nextPage()" id="btn_next" class="d-flex align-items-center text-decoration-none" style="cursor:pointer">Next <i class="bi bi-chevron-right ms-2"></i></a>
+
+          <a onclick="prevPage()" id="btn_prev" class="d-flex align-items-center text-decoration-none" style="cursor:pointer">
+            <i class="bi bi-chevron-left me-2"></i> Previous
+          </a>
+
+          <a onclick="nextPage()" id="btn_next" class="d-flex align-items-center text-decoration-none" style="cursor:pointer">
+            Next <i class="bi bi-chevron-right ms-2"></i>
+          </a>
+
         </div>
       </div>
     </div>
-    
-    <div class="container p-5" style="min-height:calc(100vh - 98px)">
-      <div class="row g-0 mn-3 test"></div>
+
+    <!-- Main Content
+    ------------------------------------------------------- -->
+    <div class="container py-3" style="min-height:calc(100vh - 98px)">
+      <div class="row g-0 m-n3 masterlist-entries"></div>
     </div>
 
+    <!-- Footer
+    ------------------------------------------------------- -->
     <div class="footer bg-dark p-4 text-center">
+
+      <!-- Your credit here! -->
       <a class="text-reset text-decoration-none" href="">This species belongs to [Your Username]</a>
-      <div class="mt-2"> <a class="text-decoration-none" href=""><i class="bi bi-github me-1"></i> zaika.io</a></div>
+
+      <!-- Please keep my credit in! -->
+      <div class="mt-2"> <a class="text-decoration-none" href="https://cheeriko.github.io/charadex/"><i class="bi bi-github me-1"></i> charadex.io</a></div>
     </div>
     
-    <!-- JS Calls
-    ===================================================== -->
+    <!-- JS Bundles
+    ------------------------------------------------------- -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.3/pagination.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     
-    <!-- Sheet Magic
-    ===================================================== -->
-
+    <!-- Masterlist Sheet
+    ------------------------------------------------------- -->
     <script>
+      
       var sheetID = "1vVtBIK-ftiPTTzPnn40uLAafWJrGvqIrW1GFYo1gmrM";
       var sheetPage = "5";
+
     </script>
     <script src="styles/masterlist.js"></script>
 

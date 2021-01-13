@@ -1,9 +1,8 @@
 var url = "https://spreadsheets.google.com/feeds/list/" + sheetID + "/" + sheetPage + "/public/values?alt=json";
 var perPage = 24;
 var currentPage = 1;
-var values = []; // Added
+var values = [];
 
-// Modified
 $.getJSON(url, function(data) {
   var output = "";
   $.each(data.feed.entry, function(index,value) {
@@ -85,7 +84,7 @@ $.getJSON(url, function(data) {
       `;
     }
   });
-  $(".test").append(output);
+  $(".masterlist-entries").append(output);
 });
 
 function prevPage() {
@@ -102,9 +101,8 @@ function nextPage() {
   }
 }
 
-// Modified
 function changePage() {
-  $(".test").html("");
+  $(".masterlist-entries").html("");
   var start = (currentPage - 1) * perPage;
   var output = values.slice(start, start + perPage).reduce((s, e) => {
     return s += `
@@ -171,10 +169,9 @@ function changePage() {
         </div>
       `;    
   }, "");
-  $(".test").append(output);
+  $(".masterlist-entries").append(output);
 }
 
-// Modified
 function numPages() {
   return Math.ceil(values.length / perPage);
 }

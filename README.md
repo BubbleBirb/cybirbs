@@ -30,6 +30,8 @@ First and foremost, you'll need a clean version of the google sheet. [Grab it he
 
 ## Sheet Anatomy
 
+This is a basic run down of the sheet and it's parts. You can skip a majority of it and come back later when you have everything set up and ready to go.
+
 ### Options
 
 This lets you change a few things, such as the filler MYO image and the ID prefix, to better fit your species and taste. 
@@ -167,6 +169,6 @@ Couldn't have done this this without these people and resources!!!
 
 ---
 
-#Final Thots
+# Final Thots
 
 If you really like this system, [please consider donating](https://ko-fi.com/cheeriko) - the more energy drinks I consume the more I binge code.

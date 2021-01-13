@@ -20,7 +20,7 @@ $.getJSON(url, function(data) {
     });
     if (index < perPage) {
       output += `
-        <div class="col-xl-3 col-lg-4 col-sm-6 p-3">
+        <div class="col">
           <div class="card h-100 overflow-hidden" style="max-width: 540px;">
             <h5 class="card-header d-flex justify-content-between">
               ` + value.gsx$id.$t + ` 
@@ -106,7 +106,7 @@ function changePage() {
   var start = (currentPage - 1) * perPage;
   var output = values.slice(start, start + perPage).reduce((s, e) => {
     return s += `
-        <div class="col-xl-3 col-lg-4 col-sm-6 p-3">
+        <div class="col">
           <div class="card h-100 overflow-hidden" style="max-width: 540px;">
             <h5 class="card-header d-flex justify-content-between">
               ` + e.id + ` 

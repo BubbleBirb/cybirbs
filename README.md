@@ -96,25 +96,29 @@ This is also the sheet you mark notes on! If you have anything to add on the des
 
 **Step Three:** Press Replace all and you're done!
 
-## Publishing sheet
+## Publishing Sheet
 
 
 
-## Permissions
-
-If you ever need to add mods into the sheet, **do NOT allow everyone to edit via link**. That will allow anyone to come in and edit whatever they like.
-
-You need to click share and add people via their emails instead.
+  Permission Warnings |
+  ------------- |
+  If you ever need to add mods into the sheet, **do NOT allow everyone to edit via link**. That will allow anyone to come in and edit whatever they like. You need to click share and add people via their emails instead. |
 
 ---
 
 # Hosting
 
-I will only be showing you how to host 2 places - on gitpages and on neocities, since these two places are completely free to host on (within reason). 
+I will only be showing you how to host on neocities. It is probably easier to host on github using gitpages but you need to know how to use github to really utilize it. I might make a tutorial later, but unfortunately right now I don't have the time :'3c
 
-## Gitpages
+Without further ado.
 
-## Neocities
+First, you'll need to sign up to [neocities](https://neocities.org/). 
+
+Then you need to head up the page and click the button that says `Code` then hit `Download Zip`.
+
+Next you need to unzip the file - anywhere will do!
+
+## Final Touches
 
 ---
 

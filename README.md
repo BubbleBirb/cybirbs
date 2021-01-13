@@ -132,10 +132,41 @@ Right now, the site should be importing from my example sheet. Grab your sheet I
 
 **Example:** /spreadsheets/d/`1vVtBIK-ftiPTTzPnn40uLAafWJrGvqIrW1GFYo1gmrM`/edit#gid=0
 
-Edit the `Index` file and scroll to the bottom of the `Index` file, is a code that says `var = "1vVtBIK-ftiPTTzPnn40uLAafWJrGvqIrW1GFYo1gmrM"` replace this ID with yours and save. You should be good to go!
+Edit the `Index` file and scroll to the bottom of the `Index` file, is a code that says `var sheetID = "1vVtBIK-ftiPTTzPnn40uLAafWJrGvqIrW1GFYo1gmrM"` replace this ID with yours and save. You should be good to go!
 
-**If** you have shifted the sheets around for whatever reason, the second number needs to be the page number of the sheet. Like right now, it's the 5th sheet in the document - if you move it right behind `Options`, it would be the 2nd. So the number would change to 2.
+**If** you have shifted the sheets around for whatever reason, `sheetPage` needs to be the page number of the sheet. Like right now, it's the 5th sheet in the document - if you move it right behind `Options`, it would be the 2nd. So the number would change to 2.
+
+## Finishing Touches
+
+YAY WE DID ALL THE HARD STUFF!!!
+
+You can edit your site further by changing these things:
+- **Favicon**, **title**, and **description** at the top of the `Index` file
+- Your species credit in the footer!
+- Navbar links
+- The colors of the page via the CSS (located in the `styles` folder).
+
+Unfortunately I can not help you any further than this, but I do encourage everyone to make their own iteration of this - and improve it if they can! I wish I had more time on my hands to do more, but I hope this is a good start!
 
 ---
 
 # Credits
+
+Couldn't have done this this without these people and resources!!!
+
+- [Bootstrap 5.0.0](https://getbootstrap.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [PaginationJS](https://pagination.js.org/)
+- [THIS ONE STACK OVERFLOW POST](https://stackoverflow.com/questions/55432151/javascript-pagination-json-data-from-google-sheet)
+- Java Monster
+- [Toyhou.se](https://toyhou.se/)
+- [Those silly lil trolls](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- Everyone who has supported me thus far
+- My friends!!
+- Phoebe (my cat)
+
+---
+
+#Final Thots
+
+If you really like this system, [please consider donating](https://ko-fi.com/cheeriko) - the more energy drinks I consume the more I binge code.

@@ -2,33 +2,36 @@
 <html lang = "eng">
   <head>
     
-    <!-- Meta Data
-    ===================================================== -->
+    <!-- Meta Data -->
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href=""/>
     <title>Your Website Title</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    
-    <!-- CSS
-    ===================================================== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheets" type="text/css" href="../daeles/styles/masterlist.css">
-
-    
-    <!-- Bootstrap Icons
-    ===================================================== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <!-- Optional Styles ================================== -->
+    <!-- You can safely remove these if BS styles are good enough for you! -->
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/masterlist.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
 
   </head>
   <body>
     
     <div class="sticky-top">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">Masterlist Stuff</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
@@ -41,26 +44,37 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Credits</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     
-      <div class="bg-white py-2 px-3 d-flex justify-content-between border-bottom">
-        <a onclick="prevPage()" id="btn_prev" class="d-flex align-items-center text-decoration-none" style="cursor:pointer"><i class="bi bi-chevron-left me-2"></i> Previous</a>
-        <a onclick="nextPage()" id="btn_next" class="d-flex align-items-center text-decoration-none" style="cursor:pointer">Next <i class="bi bi-chevron-right ms-2"></i></a>
+      <div class="page-nav bg-white py-2 border-bottom">
+        <div class="container d-flex justify-content-between">
+          <a onclick="prevPage()" id="btn_prev" class="d-flex align-items-center text-decoration-none" style="cursor:pointer"><i class="bi bi-chevron-left me-2"></i> Previous</a>
+          <a onclick="nextPage()" id="btn_next" class="d-flex align-items-center text-decoration-none" style="cursor:pointer">Next <i class="bi bi-chevron-right ms-2"></i></a>
+        </div>
       </div>
     </div>
     
-    <div class="container-fluid p-4" style="min-height:calc(100vh - 98px)">
-      <div class="row g-0 test"></div>
+    <div class="container p-5" style="min-height:calc(100vh - 98px)">
+      <div class="row g-0 mn-3 test"></div>
     </div>
 
-    <div class="bg-dark footer p-4 text-center">
-      <div><a class="text-reset text-decoration-none" href="">This species belongs to [Your Username]</a></div>
-      <div class="mt-2">
-        <a class="text-white-50 text-decoration-none" href=""><i class="bi bi-github"></i> Find at MasterlistMania.io</a>
-      </div>
+    <div class="footer bg-dark p-4 text-center">
+      <a class="text-reset text-decoration-none" href="">This species belongs to [Your Username]</a>
+      <div class="mt-2"> <a class="text-decoration-none" href=""><i class="bi bi-github me-1"></i> zaika.io</a></div>
     </div>
     
     <!-- JS Calls
@@ -73,193 +87,10 @@
     ===================================================== -->
 
     <script>
-
       var sheetID = "1vVtBIK-ftiPTTzPnn40uLAafWJrGvqIrW1GFYo1gmrM";
       var sheetPage = "5";
-      var perPage = 18;
-
-
-      var url = "https://spreadsheets.google.com/feeds/list/" + sheetID + "/" + sheetPage + "/public/values?alt=json";
-      var currentPage = 1;
-      var values = []; // Added
-
-      // Modified
-      $.getJSON(url, function(data) {
-        var output = "";
-        $.each(data.feed.entry, function(index,value) {
-          values.push({
-            id:          value.gsx$id.$t, 
-            image:       value.gsx$image.$t, 
-            owner:       value.gsx$owner.$t, 
-            artist:      value.gsx$artist.$t, 
-            designer:    value.gsx$designer.$t, 
-            worth:       value.gsx$worth.$t, 
-            status:      value.gsx$status.$t, 
-            cooldown:    value.gsx$cooldown.$t,
-            designtype:  value.gsx$designtype.$t,
-            notes:       value.gsx$notes.$t,
-          });
-          if (index < perPage) {
-            output += `
-              <div class="col-2 p-3">
-                <div class="card h-100 overflow-hidden" style="max-width: 540px;">
-                  <h5 class="card-header d-flex justify-content-between">
-                    ` + value.gsx$id.$t + ` 
-                    <a class="text-reset" type="button" data-bs-toggle="collapse" data-bs-target=".` + value.gsx$id.$t + `">
-                      <i class="bi bi-info-circle-fill"></i>
-                    </a>
-                  </h5>
-                  <div class="collapse show ` + value.gsx$id.$t + `">
-                    <div style="
-                    
-                      height: 300px;
-                      background-image: url(` + value.gsx$image.$t + `);
-                      background-size: contain;
-                      background-position: center;
-                      background-repeat: no-repeat;">
-                      
-                    </div>
-                  </div>
-                  <div class="collapse ` + value.gsx$id.$t + `">
-                    <div class="overflow-auto" style="height:300px;">
-                      <ul class="list-group list-group-flush" style="font-size:80%">
-
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Owner</b>` + value.gsx$owner.$t + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Artist</b>` + value.gsx$artist.$t + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Designer</b>` + value.gsx$designer.$t + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Worth</b>` + value.gsx$worth.$t + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Status</b>` + value.gsx$status.$t + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Cooldown</b>` + value.gsx$cooldown.$t + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Design Type</b>` + value.gsx$designtype.$t + `
-                        </li>
-                        
-                        <li class="list-group-item">
-                          <b>Notes</b>
-                          <div class="ps-2">` + value.gsx$notes.$t + `</div>
-                        </li>
-
-                      </ul>
-                    </div>  
-                  </div>
-                </div>
-              </div>
-            `;
-          }
-        });
-        $(".test").append(output);
-      });
-
-      function prevPage() {
-        if (currentPage > 1) {
-          currentPage--;
-          changePage();
-        }
-      }
-
-      function nextPage() {
-        if (currentPage < numPages()) {
-          currentPage++;
-          changePage();
-        }
-      }
-
-      // Modified
-      function changePage() {
-        $(".test").html("");
-        var start = (currentPage - 1) * perPage;
-        var output = values.slice(start, start + perPage).reduce((s, e) => {
-          return s += `
-              <div class="col-2 p-3">
-                <div class="card h-100 overflow-hidden" style="max-width: 540px;">
-                  <h5 class="card-header d-flex justify-content-between">
-                    ` + e.id + ` 
-                    <a class="text-reset" type="button" data-bs-toggle="collapse" data-bs-target=".` + e.id + `">
-                      <i class="bi bi-info-circle-fill"></i>
-                    </a>
-                  </h5>
-                  <div class="collapse show ` + e.id + `">
-                    <div style="
-                    
-                      height: 300px;
-                      background-image: url(` + e.image + `);
-                      background-size: contain;
-                      background-position: center;
-                      background-repeat: no-repeat;">
-                      
-                    </div>
-                  </div>
-                  <div class="collapse ` + e.id + `">
-                    <div class="overflow-auto" style="height:300px;">
-                      <ul class="list-group list-group-flush" style="font-size:80%">
-
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Owner</b>` + e.owner + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Artist</b>` + e.artist + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Designer</b>` + e.designer + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Worth</b>` + e.worth + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Status</b>` + e.status + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Cooldown</b>` + e.cooldown + `
-                        </li>
-                        
-                        <li class="list-group-item d-flex justify-content-between">
-                          <b>Design Type</b>` + e.designtype + `
-                        </li>
-                        
-                        <li class="list-group-item">
-                          <b>Notes</b>
-                          <div class="ps-2">` + e.notes + `</div>
-                        </li>
-
-                      </ul>
-                    </div>  
-                  </div>
-                </div>
-              </div>
-            `;    
-        }, "");
-        $(".test").append(output);
-      }
-
-      // Modified
-      function numPages() {
-        return Math.ceil(values.length / perPage);
-      }
-
     </script>
+    <script src="styles/masterlist.js"></script>
 
   </body>
 </html>

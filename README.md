@@ -98,11 +98,17 @@ This is also the sheet you mark notes on! If you have anything to add on the des
 
 ## Publishing Sheet
 
+![picture](https://i.imgur.com/HRuSvYv.gif)
 
+**Step One:** Go to `File` and select `Publish to Web`.
+
+**Step Two:** Select the `Master Sheet` document ONLY.
+
+**Step Three:** Publish!
 
   Permission Warnings |
   :------------- |
-  If you ever need to add mods into the sheet, **do NOT allow everyone to edit via link**. That will allow anyone to come in and edit whatever they like. You need to click share and add people via their emails instead. |
+  If you ever need to add mods into the sheet, **do NOT allow everyone to edit via link**. That will allow anyone to come in and edit whatever they like. You need to click `Share` and add people via their emails instead. |
 
 ---
 
@@ -112,13 +118,23 @@ I will only be showing you how to host on neocities. It is probably easier to ho
 
 Without further ado.
 
-First, you'll need to sign up to [neocities](https://neocities.org/). 
+First, you'll need to sign up to [neocities](https://neocities.org/). Then go to `Edit Site`, you'll see a menu with 4 files. **Delete every file except the `Index` file.**
 
-Then you need to head up the page and click the button that says `Code` then hit `Download Zip`.
+Head up _this_ page and click the button that says `Code` then hit `Download Zip`. You'll need to unzip the file - anywhere will do!
 
-Next you need to unzip the file - anywhere will do!
+Open the folder named `charadex-master` and highlight all the files. Drag and drop them into the Neocities dashboard.
 
-## Final Touches
+You should now have an up and running site!!!
+
+## Importing Your Sheet
+
+Right now, the site should be importing from my example sheet. Grab your sheet ID - it's located in the URL. 
+
+**Example:** /spreadsheets/d/`1vVtBIK-ftiPTTzPnn40uLAafWJrGvqIrW1GFYo1gmrM`/edit#gid=0
+
+Edit the `Index` file and scroll to the bottom of the `Index` file, is a code that says `var = "1vVtBIK-ftiPTTzPnn40uLAafWJrGvqIrW1GFYo1gmrM"` replace this ID with yours and save. You should be good to go!
+
+**If** you have shifted the sheets around for whatever reason, the second number needs to be the page number of the sheet. Like right now, it's the 5th sheet in the document - if you move it right behind `Options`, it would be the 2nd. So the number would change to 2.
 
 ---
 

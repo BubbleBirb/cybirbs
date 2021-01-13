@@ -26,7 +26,7 @@ I'm not especially good at JS, so I apologize in advance if anyone who knows the
 
 # Getting Started
 
-First and foremost, you'll need a clean version of the google sheet. [Grab it here!](http://www.google.fr/ "Named link title")
+First and foremost, you'll need a clean version of the google sheet. [Grab it here!](https://docs.google.com/spreadsheets/d/1CzdobB2I56Smd-xz9zVfIVBPYvjNpj6wyLkjEB9-MOc/copy)
 
 ## Sheet Anatomy
 

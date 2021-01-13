@@ -169,6 +169,4 @@ Couldn't have done this this without these people and resources!!!
 
 ---
 
-# Final Thots
-
 If you really like this system, [please consider donating](https://ko-fi.com/cheeriko) - the more energy drinks I consume the more I binge code.

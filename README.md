@@ -116,9 +116,9 @@ This is also the sheet you mark notes on! If you have anything to add on the des
 
 # Hosting
 
-I will only be showing you how to host on neocities. It is probably easier to host on github using gitpages but you need to know how to use github to really utilize it. I might make a tutorial later, but unfortunately right now I don't have the time :'3c
-
-Without further ado.
+> I will only be showing you how to host on neocities. It is probably easier to host on github using gitpages but you need to know how to use github to really utilize it. I might make a tutorial later, but unfortunately right now I don't have the time :'3c
+> 
+> Without further ado.
 
 First, you'll need to sign up to [neocities](https://neocities.org/). Then go to `Edit Site`, you'll see a menu with 4 files. **Delete every file except the `Index` file.**
 

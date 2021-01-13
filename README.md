@@ -31,15 +31,28 @@ First and foremost, you'll need a clean version of the google sheet. [Grab it he
 
 **Options**
 
-**Logv
+> This lets you change a few things, such as the filler MYO image and the ID prefix, to better fit your species and taste. 
+
+**Log**
+
+> The log you'll be inputting info into.
+
+Transaction ID  | ID Number  |  Image  | Owner  |  Artist  |  Designer  |  Worth  |  Status  | Cooldown  |  Design Type  | Transaction Type  |  Proof
+------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell
 
 **Original Log**
 
+> This is the log all of new entries with be added to.
+
 **Transaction Log**
+
+> All of the transactions will sort into this log. This serves two purposes - to make it easier for the final list to sort through information, and so you have a log to look back on in case any discrepancies arise.
 
 **Masterlist**
 
-This is the final conglomerate of the logs, and 
+> This is the final conglomerate of the logs, and the sheet you'll be pulling information from.
+> This is also the sheet you mark notes on! If you have anything to add on the design, add in the Notes column.
 
 ### How to add an entry
 

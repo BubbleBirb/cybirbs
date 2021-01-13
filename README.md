@@ -51,10 +51,11 @@ The log you'll be inputting info into.
 - Transaction Type - If it's a new entry or a traded design, etc.
 - Proof - Proof of transaction.
 
-> **Some Warnings**
-> - Log entries **should _not_** be deleted. This will mess shift everything on the list.
-> - Every new transaction should be logged - I do **not** recommend going back to the original entry and trying to edit in an owner or something.
-> - I do not recommend logging URLs in Owner, Artist, & Designer. The JS on the site won't read it if it's hotlinked, and it looks bad as a regular link. You also can't log multiple people this way.
+  Some Warnings |
+  ------------- |
+  Log entries **should _not_** be deleted. This will mess shift everything on the list.  |
+  Every new transaction should be logged - I do **not** recommend going back to the original entry and trying to edit in an owner or something.  |
+  I do not recommend logging URLs in Owner, Artist, & Designer. The JS on the site won't read it if it's hotlinked, and it looks bad as a regular link. You also can't log multiple people this way.  |
 
 ### Original Log
 

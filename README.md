@@ -37,9 +37,18 @@ First and foremost, you'll need a clean version of the google sheet. [Grab it he
 
 > The log you'll be inputting info into.
 
-Transaction ID  | ID Number  |  Image  | Owner  |  Artist  |  Designer  |  Worth  |  Status  |  Cooldown  |  Design Type  | Transaction Type  |  Proof
-------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
-This automatically adds a transaction number to your new entry. |  If you're logging a new design, you leave this empty. But if you're logging a transaction, make sure to fill in the ID so it updates the ML Entry!  |  Image of the design, leave empty if no design  |  Artist of image  |  Designer of design  |  Design's worth  |  Whether it's okay to resale, trade, or gift a design - or if the design is voided.  |  Designs can be traded after this date.  |  Type of design  |  If it's a new entry or a traded design, etc.  |  Proof of transaction  | Content Cell
+- Transaction ID - This automatically adds a transaction number to your new entry.
+- ID Number - If you're logging a new design, you leave this empty. But if you're logging a transaction, make sure to fill in the ID so it updates the ML Entry!
+- Image - Image of the design, leave empty if no design.
+- Owner - Owner of design at time of logging.
+- Artist - Artist of image.
+- Designer - Designer of design.
+- Worth - Design's worth.
+- Status - Whether it's okay to resale, trade, or gift a design - or if the design is voided.
+- Cooldown - Designs can be traded after this date.
+- Design Type - Type of design.
+- Transaction Type - If it's a new entry or a traded design, etc.
+- Proof - Proof of transaction.
 
 **Original Log**
 

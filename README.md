@@ -34,7 +34,7 @@ This is a basic run down of the sheet and it's parts. You can skip a majority of
 
 ### Options
 
-This lets you change a few things, such as the filler MYO image and the ID prefix, to better fit your species and taste. 
+This allows you to change a few things, such as the filler MYO image and the ID prefix, to better fit your species and taste. Notes are added to the sheet for clarity, but you can remove all the text from them to delete them if they're getting in the way.
 
 ### Log
 
@@ -48,7 +48,7 @@ The log you'll be inputting info into.
 - `Designer` - Designer of design.
 - `Worth` - Design's worth.
 - `Status` - Whether it's okay to resale, trade, or gift a design - or if the design is voided.
-- `Cooldown` - Designs can be traded after this date. **Small warnings will pop up in these cells,** don't worry about them, they sheet is working as intended.
+- `Cooldown` - Designs can be traded after this date. **Small warnings will pop up in these cells,** don't worry about them, the sheet is working as intended.
 - `Design Type` - Type of design.
 - `Transaction Type` - If it's a new entry or a traded design, etc.
 - `Proof` - Proof of transaction.

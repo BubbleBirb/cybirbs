@@ -20,6 +20,7 @@ I'm not especially good at JS, so I apologize in advance if anyone who knows the
 - Absolutely not meant for species with designs in the thousands. It'll end up being too much of a straight for google sheets. If you have that many design, I recommend lorekeeper or commissioning someone with fullstack knowledge to help you out.
 - Hard to edit the sheet to include more information. If you absolutely don't know anything about sheets or JS, you're going to have a really bad time.
 - No search function or _real_ pagination function on the outward page. (I'm not smart enough to add these in yet...but one day.)
+- Older computers might shit themselves, I'm so sorry google sheets is like that.
 
 ---
 
@@ -45,10 +46,15 @@ The log you'll be inputting info into.
 - Designer - Designer of design.
 - Worth - Design's worth.
 - Status - Whether it's okay to resale, trade, or gift a design - or if the design is voided.
-- Cooldown - Designs can be traded after this date.
+- Cooldown - Designs can be traded after this date. **Small warnings will pop up in these cells,** don't worry about them, they sheet is working as intended.
 - Design Type - Type of design.
 - Transaction Type - If it's a new entry or a traded design, etc.
 - Proof - Proof of transaction.
+
+> **Some Warnings**
+> - Log entries **should _not_** be deleted. This will mess shift everything on the list.
+> - Every new transaction should be logged - I do **not** recommend going back to the original entry and trying to edit in an owner or something.
+> - I do not recommend logging URLs in Owner, Artist, & Designer. The JS on the site won't read it if it's hotlinked, and it looks bad as a regular link. You also can't log multiple people this way.
 
 ### Original Log
 
@@ -64,6 +70,8 @@ This is the final conglomerate of the logs, and the sheet you'll be pulling info
 This is also the sheet you mark notes on! If you have anything to add on the design, add in the Notes column.
 
 ## How to add an entry
+
+## Changing Usernames
 
 ## Permissions
 

@@ -68,9 +68,23 @@ All of the transactions will sort into this log. This serves two purposes - to m
 ### Masterlist
 
 This is the final conglomerate of the logs, and the sheet you'll be pulling information from.
+
 This is also the sheet you mark notes on! If you have anything to add on the design, add in the Notes column.
 
 ## How to add an entry
+
+![picture](https://i.imgur.com/JRnl1wv.gif)
+
+<details>
+   <summary>And here's how transaction logs look.</summary>
+   ![picture](https://i.imgur.com/7qaOCRp.gif)
+</details>
+
+**Step One:** Right click on row 2 and then click Insert 1 Above.
+
+**Step Two:** Add in the information like normal.
+
+**Step Three:** You're done! But make sure to check the bank once you're done in case something doesn't look right.
 
 ## Changing Usernames
 

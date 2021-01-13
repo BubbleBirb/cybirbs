@@ -27,15 +27,15 @@ I'm not especially good at JS, so I apologize in advance if anyone who knows the
 
 First and foremost, you'll need a clean version of the google sheet. [Grab it here!](http://www.google.fr/ "Named link title")
 
-### Sheet Anatomy
+## Sheet Anatomy
 
-**Options**
+### Options
 
-> This lets you change a few things, such as the filler MYO image and the ID prefix, to better fit your species and taste. 
+This lets you change a few things, such as the filler MYO image and the ID prefix, to better fit your species and taste. 
 
-**Log**
+### Log
 
-> The log you'll be inputting info into.
+The log you'll be inputting info into.
 
 - Transaction ID - This automatically adds a transaction number to your new entry.
 - ID Number - If you're logging a new design, you leave this empty. But if you're logging a transaction, make sure to fill in the ID so it updates the ML Entry!
@@ -50,22 +50,22 @@ First and foremost, you'll need a clean version of the google sheet. [Grab it he
 - Transaction Type - If it's a new entry or a traded design, etc.
 - Proof - Proof of transaction.
 
-**Original Log**
+### Original Log
 
 > This is the log all of new entries with be added to.
 
-**Transaction Log**
+### Transaction Log
 
 > All of the transactions will sort into this log. This serves two purposes - to make it easier for the final list to sort through information, and so you have a log to look back on in case any discrepancies arise.
 
-**Masterlist**
+### Masterlist
 
 > This is the final conglomerate of the logs, and the sheet you'll be pulling information from.
 > This is also the sheet you mark notes on! If you have anything to add on the design, add in the Notes column.
 
-### How to add an entry
+## How to add an entry
 
-### Permissions
+## Permissions
 
 ## Publishing sheet
 

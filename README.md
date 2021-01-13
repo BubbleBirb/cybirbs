@@ -77,7 +77,7 @@ This is also the sheet you mark notes on! If you have anything to add on the des
 
 <details>
    <summary>And here's how transaction logs look.</summary>
-   ![picture](https://i.imgur.com/7qaOCRp.gif)
+   <img src="https://i.imgur.com/7qaOCRp.gif">
 </details>
 
 **Step One:** Right click on row 2 and then click Insert 1 Above.
@@ -88,9 +88,23 @@ This is also the sheet you mark notes on! If you have anything to add on the des
 
 ## Changing Usernames
 
-## Permissions
+![picture](https://i.imgur.com/mHSWmWR.gif)
+
+**Step One:** In the log, press `CTRL + F` and then type in the old username.
+
+**Step Two:** Press the button with 3 dots and enter the Replace with portion with the new username.
+
+**Step Three:** Press Replace all and you're done!
 
 ## Publishing sheet
+
+
+
+## Permissions
+
+If you ever need to add mods into the sheet, **do NOT allow everyone to edit via link**. That will allow anyone to come in and edit whatever they like.
+
+You need to click share and add people via their emails instead.
 
 ---
 

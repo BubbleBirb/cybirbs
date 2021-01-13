@@ -38,21 +38,21 @@ This lets you change a few things, such as the filler MYO image and the ID prefi
 
 The log you'll be inputting info into.
 
-- Transaction ID - This automatically adds a transaction number to your new entry.
-- ID Number - If you're logging a new design, you leave this empty. But if you're logging a transaction, make sure to fill in the ID so it updates the ML Entry!
-- Image - Image of the design, leave empty if no design.
-- Owner - Owner of design at time of logging.
-- Artist - Artist of image.
-- Designer - Designer of design.
-- Worth - Design's worth.
-- Status - Whether it's okay to resale, trade, or gift a design - or if the design is voided.
-- Cooldown - Designs can be traded after this date. **Small warnings will pop up in these cells,** don't worry about them, they sheet is working as intended.
-- Design Type - Type of design.
-- Transaction Type - If it's a new entry or a traded design, etc.
-- Proof - Proof of transaction.
+- `Transaction ID` - This automatically adds a transaction number to your new entry.
+- `ID Number` - If you're logging a new design, you leave this empty. But if you're logging a transaction, make sure to fill in the ID so it updates the ML Entry!
+- `Image` - Image of the design, leave empty if no design.
+- `Owner` - Owner of design at time of logging.
+- `Artist` - Artist of image.
+- `Designer` - Designer of design.
+- `Worth` - Design's worth.
+- `Status` - Whether it's okay to resale, trade, or gift a design - or if the design is voided.
+- `Cooldown` - Designs can be traded after this date. **Small warnings will pop up in these cells,** don't worry about them, they sheet is working as intended.
+- `Design Type` - Type of design.
+- `Transaction Type` - If it's a new entry or a traded design, etc.
+- `Proof` - Proof of transaction.
 
   Some Warnings |
-  ------------- |
+  :------------- |
   Log entries **should _not_** be deleted. This will mess shift everything on the list.  |
   Every new transaction should be logged - I do **not** recommend going back to the original entry and trying to edit in an owner or something.  |
   I do not recommend logging URLs in Owner, Artist, & Designer. The JS on the site won't read it if it's hotlinked, and it looks bad as a regular link. You also can't log multiple people this way.  |
@@ -101,7 +101,7 @@ This is also the sheet you mark notes on! If you have anything to add on the des
 
 
   Permission Warnings |
-  ------------- |
+  :------------- |
   If you ever need to add mods into the sheet, **do NOT allow everyone to edit via link**. That will allow anyone to come in and edit whatever they like. You need to click share and add people via their emails instead. |
 
 ---

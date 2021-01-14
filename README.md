@@ -17,8 +17,8 @@ I'm not especially good at JS, so I apologize in advance if anyone who knows the
 
 ### Cons
 
-- Absolutely not meant for species with designs in the thousands. It'll end up being too much of a straight for google sheets. If you have that many design, I recommend lorekeeper or commissioning someone with fullstack knowledge to help you out.
-- Hard to edit the sheet to include more information. If you absolutely don't know anything about sheets or JS, you're going to have a really bad time.
+- Absolutely not meant for species with designs in the thousands. It'll end up being too much for google sheets to handle. If you have that many design, I recommend lorekeeper or commissioning someone with fullstack knowledge to help you out.
+- It's hard to edit the sheet to include more information. If you absolutely don't know anything about sheets or JS, you're going to have a really bad time.
 - No search function or _real_ pagination function on the outward page. (I'm not smart enough to add these in yet...but one day.)
 - Older computers might shit themselves, I'm so sorry google sheets is like that.
 

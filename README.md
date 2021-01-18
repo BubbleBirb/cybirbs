@@ -1,6 +1,9 @@
-```Update v.2.0.0
+# Update v.2.0.0
+```
 You only need to update the CSS and JS file - everything should still work with the original HTML.
 See more info in changelog.
+
+The old version is saved to v.1.0.0!
 ```
 
 # Charadex

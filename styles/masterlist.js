@@ -1,3 +1,10 @@
+// Spreadsheet import
+var url = "https://spreadsheets.google.com/feeds/list/" + sheetID + "/" + sheetPage + "/public/values?alt=json";
+
+// Pagination controls
+var perPage = 24;
+var currentPage = 1;
+
 // Spreadsheet object
 var values = [];
 

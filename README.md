@@ -1,3 +1,8 @@
+```Update v.2.0.0
+You only need to update the CSS and JS file - everything should still work with the original HTML.
+See more info in changelog.
+```
+
 # Charadex
 
 The free and easy way to log your species designs and show it off!
@@ -160,6 +165,8 @@ Couldn't have done this this without these people and resources!!!
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 - [PaginationJS](https://pagination.js.org/)
 - [THIS ONE STACK OVERFLOW POST](https://stackoverflow.com/questions/55432151/javascript-pagination-json-data-from-google-sheet)
+- [Codecademy](https://www.codecademy.com/)
+- [Sololearn](https://www.sololearn.com/)
 - Java Monster
 - [Toyhou.se](https://toyhou.se/)
 - [Those silly lil trolls](https://www.youtube.com/watch?v=dQw4w9WgXcQ)

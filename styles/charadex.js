@@ -62,7 +62,7 @@ $.getJSON(sheetUrl, function(data) {
     let itemArray = Object.keys(values[0]);
     // Replaces the 'image' in the array with something
     // that'll actually make it an image
-    itemArray[1] = { name: 'image', attr: 'src' };
+    itemArray[2] = { name: 'image', attr: 'src' };
 
     // List.js options for the item
     let itemOptions = {

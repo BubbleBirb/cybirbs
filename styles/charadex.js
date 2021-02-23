@@ -112,7 +112,7 @@ $.getJSON(sheetUrl, function(data) {
         searchClass: "search",
         location: 0,
         threshold: 0,
-        multiSearch: false
+        multiSearch: true
       }
     };
 

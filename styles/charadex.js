@@ -114,12 +114,6 @@ $.getJSON(sheetUrl, function(data) {
         right: 2,
         paginationClass: 'pagination-bottom',
       }],
-      fuzzySearch: {
-        searchClass: "search",
-        location: 0,
-        threshold: 0,
-        multiSearch: true
-      }
     };
 
     // Create List

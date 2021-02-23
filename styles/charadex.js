@@ -95,6 +95,12 @@ $.getJSON(sheetUrl, function(data) {
         { name: 'image', attr: 'src' },
         { name: 'link', attr: 'href' }
       ],
+      searchColumns: [
+        'id',
+        'owner',
+        'artist',
+        'designer'
+      ],
       item: 'charadex-item',
       page: numOfItems,
       pagination: [{

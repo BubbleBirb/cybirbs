@@ -11,7 +11,7 @@ let numOfItems = 12;
 
 // Sort order for ascending/descending
 // asc/desc
-var order = "desc";
+var order = "asc";
 
 
 /* Only edit below if you know what you're doing!

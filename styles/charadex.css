@@ -15,7 +15,7 @@
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color:                    #9381FF;
+  --cd-primary-color:                    #FFCF56;
   --cd-primary-text-color:               #fff;
 
   /* ============================================================= */
@@ -51,7 +51,7 @@
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color:          #FFCF56;
+  --cd-navbar-background-color:          #9381FF;
   --cd-navbar-brand-color:               var(--cd-primary-color);
   --cd-navbar-brand-color-hover:         var(--cd-secondary-color);
   --cd-navbar-text-color:                var(--cd-content-background-color);
